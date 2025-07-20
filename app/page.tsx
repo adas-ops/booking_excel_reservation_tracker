@@ -62,8 +62,11 @@ import { Separator } from "@/components/ui/separator"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { ThemeProvider } from "@/components/theme-provider"
 import { useTheme } from "next-themes"
+<<<<<<< HEAD
 import { ThemeToggle } from '../components/ThemeToggle'
 import { DateRange } from 'react-day-picker';
+=======
+>>>>>>> fa34384e1cef5292bbb0845ec029f08b83676c9b
 
 // Define booking status types
 type BookingStatus = "confirmed" | "pending" | "cancelled" | "completed"
@@ -134,7 +137,11 @@ export default function BookingTracker() {
   // State for filtering and pagination
   const [activeTab, setActiveTab] = useState("all")
   const [searchQuery, setSearchQuery] = useState("")
+<<<<<<< HEAD
   const [dateRangeFilter, setDateRangeFilter] = useState<DateRange>({
+=======
+  const [dateRangeFilter, setDateRangeFilter] = useState<{ from: Date | undefined; to: Date | undefined }>({
+>>>>>>> fa34384e1cef5292bbb0845ec029f08b83676c9b
     from: undefined,
     to: undefined,
   })
@@ -1138,8 +1145,12 @@ export default function BookingTracker() {
   }
 
   return (
+<<<<<<< HEAD
     <div>
       <ThemeToggle />
+=======
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+>>>>>>> fa34384e1cef5292bbb0845ec029f08b83676c9b
       <div className="container mx-auto py-8 px-4">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-bold">Booking & Payment Tracker</h1>
@@ -2333,6 +2344,10 @@ export default function BookingTracker() {
           </DialogContent>
         </Dialog>
       </div>
+<<<<<<< HEAD
     </div>
+=======
+    </ThemeProvider>
+>>>>>>> fa34384e1cef5292bbb0845ec029f08b83676c9b
   )
 }
