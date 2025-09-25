@@ -66,3 +66,10 @@
     "@types/react-dom": "^18.3.1"
   }
 }
+{
+  "overrides": {
+    "vaul": {
+      "react": "^19.0.0"
+    }
+  }
+}
